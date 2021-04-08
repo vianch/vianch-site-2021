@@ -32,7 +32,7 @@ jobs:
         with:
           node-version: '14'
 
-      - run: npm install -g yarn
+      - run: npm install -g yarn gatsby-cli
       - run: yarn run build
       - run: echo Build completed!
       
