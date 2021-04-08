@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext", "es2015", "es2017"],
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["components/*"],
-      "@/templates/*": ["templates/*"],
-      "@/models/*": ["models/*"],
-      "@/utils/*": ["services/*"],
-      "@/lib/*": ["lib/*"],
-      "@/services/*": ["services/*"]
+      "@components/*": ["src/components/*"],
+      "@templates/*": ["src/templates/*"],
+      "@models/*": ["src/models/*"],
+      "@utils/*": ["src/utils/*"],
+      "@lib/*": ["src/lib/*"],
+      "@services/*": ["src/services/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,

@@ -8,7 +8,9 @@ module.exports = {
         allExtensions: true, // defaults to false
       },
     },
-    `gatsby-plugin-sass`,
+    {
+      resolve: "gatsby-plugin-sass",
+    },
   ],
   siteMetadata: {
     title: "VIANCH",
