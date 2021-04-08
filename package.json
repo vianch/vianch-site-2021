@@ -1,0 +1,39 @@
+{
+  "name": "vianch-site-2021",
+  "version": "1.0.0",
+  "description": "vianch personal site",
+  "main": "index.js",
+  "repository": "git@github.com:vianch/vianch-site-2021.git",
+  "author": "Victor <vachavarro@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "APP_ENV=production gatsby build",
+    "dev": "APP_ENV=development gatsby develop",
+    "start": "APP_ENV=production gatsby serve -H 0.0.0.0 -p 8080",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "npm run lint -- --fix",
+    "clean:gatsby": "gatsby clean",
+    "clean": "gatsby clean && rm -rf package-lock.json && rm -rf yarn.lock && rm -rf yarn-error.log && rm -rf node_modules &&  rm -rf .next &&  rm -rf _static && yarn install"
+  },
+  "dependencies": {
+    "gatsby": "^3.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "@types/react": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "gatsby-plugin-sass": "^4.2.0",
+    "gatsby-plugin-typescript": "^3.2.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.8",
+    "typescript": "^4.2.4"
+  }
+}

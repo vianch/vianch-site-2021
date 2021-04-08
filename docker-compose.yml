@@ -1,0 +1,19 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: vianch-site-image 
+    container_name: 'vianch-site'
+    ports:
+      - "4000:8080"
+    networks:
+      - vianch-network
+    environment:
+      - APP_ENV=production
+      - GATSBY_WEBPACK_PUBLICPATH=/
+
+networks:
+  vianch-network: 
+    name: vianch-site
