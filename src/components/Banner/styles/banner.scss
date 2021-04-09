@@ -1,0 +1,87 @@
+@import "../../../theme/lib/breakpoints";
+@import "../../../theme/lib/colors";
+
+.container.banner__container {
+  text-align: center;
+  padding: 5rem 1.5rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 26rem;
+
+  @include respond-below(md) {
+    margin: 8rem auto;
+  }
+
+  @include respond-below(xs) {
+    margin: 10rem auto;
+    height: auto;
+  }
+}
+
+.banner__info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+  @include respond-below(xs) {
+    flex-flow: column nowrap;
+    padding: 2.5rem 0;
+  }
+}
+
+.banner__title {
+  font-size: 4rem;
+
+  @include respond-below(sm) {
+    font-size: 3rem;
+  }
+}
+
+.banner__description {
+  font-size: 2rem;
+  color: $grayLightColor;
+  margin-top: 1.5rem;
+  line-height: 3.1rem;
+  padding: 0 2.5rem;
+
+  @include respond-below(sm) {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+
+  @include respond-below(xs) {
+    margin-top: 2rem;
+  }
+}
+
+.banner__link {
+  color: $mainFontColor;
+
+  &:focus,
+  &:visited {
+    color: $mainFontColor;
+  }
+
+  &:hover {
+    color: $blueFontColor;
+  }
+}
+
+.banner__avatar-container {
+  $avatarSize: 13rem;
+
+  border-radius: 50%;
+  background: $grayLightColor;
+  width: $avatarSize;
+  height: $avatarSize;
+  display: block;
+
+  .banner__avatar {
+    width: $avatarSize;
+    height: $avatarSize;
+    display: block;
+  }
+}
