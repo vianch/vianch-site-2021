@@ -4,10 +4,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: vianch-site-image 
+    image: vianch-site-image
     container_name: 'vianch-site'
     ports:
-      - "4000:8080"
+      - "8080:8080"
     networks:
       - vianch-network
     environment:
@@ -15,5 +15,5 @@ services:
       - GATSBY_WEBPACK_PUBLICPATH=/
 
 networks:
-  vianch-network: 
+  vianch-network:
     name: vianch-site

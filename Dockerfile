@@ -1,6 +1,6 @@
 FROM node:fermium
 
-ENV PORT 3000
+ENV PORT 8080
 ENV APP_ENV production
 
 # Create app directory
