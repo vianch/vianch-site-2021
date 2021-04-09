@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import { Header, Banner } from "../components";
+import { Header, Banner, Repositories } from "../components";
 // import { PageProps } from "gatsby";
 
 import "../theme/main.scss";
@@ -9,6 +9,7 @@ const IndexRoute = (): ReactElement => {
     <>
       <Header />
       <Banner />
+      <Repositories />
     </>
   );
 };
