@@ -1,3 +1,6 @@
+@import "../../../theme/lib/breakpoints";
+@import "../../../theme/lib/colors";
+
 .container.repositories__container {
   margin-top: 3.4rem;
 }
@@ -10,6 +13,16 @@
   justify-content: center;
   margin-bottom: 3.5rem;
   font-size: 2.4rem;
+}
+
+.repositories__link {
+  color: $mainFontColor;
+
+  &:hover,
+  &:focus,
+  &:visited {
+    color: $mainFontColor;
+  }
 }
 
 .repositories__card {

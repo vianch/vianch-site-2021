@@ -1,9 +1,19 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, useState, useEffect } from "react";
 import { Card } from "../core";
+
+import { getRepositories } from "../../lib";
 
 import "./styles/repositories.scss";
 
 const Repositories = (): ReactElement => {
+  const [repositories, setRepositories] = useState([] as Repository[]);
+
+  useEffect(() => {
+    if (repositories?.length === 0) {
+      setRepositories(getRepositories());
+    }
+  }, []);
+
   return (
     <div className="container repositories__container">
       <h2 className="repositories__title">
@@ -12,57 +22,31 @@ const Repositories = (): ReactElement => {
       </h2>
 
       <div className="row">
-        <div className="four columns">
-          <Card
-            title="vianch/vianch-site-2021"
-            className="repositories__card"
-            description="Vianch portfolio 2021"
-            animate
-          >
-            <span className="repositories__technology">
-              <img
-                className="repositories__technology-image"
-                src="images/brackets.svg"
-                alt="brackets"
-              />
-              TypeScript
-            </span>
-          </Card>
-        </div>
-        <div className="four columns">
-          <Card
-            animate
-            className="repositories__card"
-            title="vianch/smooth-server"
-            description="A server to deploy local environments or static code"
-          >
-            <span className="repositories__technology">
-              <img
-                className="repositories__technology-image"
-                src="images/brackets.svg"
-                alt="brackets"
-              />
-              JavaScript
-            </span>
-          </Card>
-        </div>
-        <div className="four columns">
-          <Card
-            animate
-            className="repositories__card"
-            title="vianch/ng2-toasty-toaster"
-            description="Messages and exception handler based on toasty"
-          >
-            <span className="repositories__technology">
-              <img
-                className="repositories__technology-image"
-                src="images/brackets.svg"
-                alt="brackets"
-              />
-              JavaScript
-            </span>
-          </Card>
-        </div>
+        {repositories?.map((repository: Repository, index: number) => (
+          <div key={`${index}_repo`} className="four columns">
+            <a
+              className="repositories__link"
+              href={repository.url}
+              target="_blank"
+            >
+              <Card
+                className="repositories__card"
+                title={repository.title}
+                description={repository.description}
+                animate
+              >
+                <span className="repositories__technology">
+                  <img
+                    className="repositories__technology-image"
+                    src="images/brackets.svg"
+                    alt="brackets"
+                  />
+                  {repository.technology}
+                </span>
+              </Card>
+            </a>
+          </div>
+        ))}
       </div>
     </div>
   );
