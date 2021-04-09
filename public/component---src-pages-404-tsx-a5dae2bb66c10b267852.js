@@ -1,2 +1,0 @@
-(self.webpackChunkvianch_site_2021=self.webpackChunkvianch_site_2021||[]).push([[218],{938:function(e,n,t){"use strict";t.r(n);var u=t(294);n.default=function(){return u.createElement(u.Fragment,null,u.createElement("h1",null,"404"))}}}]);
-//# sourceMappingURL=component---src-pages-404-tsx-a5dae2bb66c10b267852.js.map
