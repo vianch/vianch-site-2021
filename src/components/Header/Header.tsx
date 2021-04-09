@@ -1,9 +1,9 @@
 import React, { ReactElement } from "react";
 
 import Navigation from "./Navigation";
+import Logo from "../Logo/Logo";
 
 import "./styles/header.scss";
-import Logo from "../Logo/Logo";
 
 const Header = (): ReactElement => {
   return (

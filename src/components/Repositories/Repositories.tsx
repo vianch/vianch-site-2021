@@ -16,7 +16,7 @@ const Repositories = (): ReactElement => {
 
   return (
     <div className="container repositories__container">
-      <h2 className="repositories__title">
+      <h2 id="git" className="repositories__title">
         <img src="images/codercat.png" height="65" alt="GitHub" />
         GitHub Repositories
       </h2>

@@ -6,7 +6,9 @@ const Clients = (): ReactElement => {
   return (
     <div className="container clients__container">
       <div className="clients__header">
-        <h2 className="clients__title">Clients</h2>
+        <h2 id="clients" className="clients__title">
+          Clients
+        </h2>
         <h3 className="clients__subtitle">
           My last clients I have worked with
         </h3>
