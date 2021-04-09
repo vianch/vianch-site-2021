@@ -84,6 +84,48 @@ const Clients = (): ReactElement => {
             />
           </a>
         </div>
+
+        <div className="client__wrap">
+          <a
+            href="https://www.elephantpink.com/"
+            target="_blank"
+            className="client__link"
+          >
+            <img
+              alt="elephantpink"
+              className="client__img"
+              src="images/elephantpink-logo.png"
+            />
+          </a>
+        </div>
+
+        <div className="client__wrap">
+          <a
+            href="https://ccrenew.com/"
+            target="_blank"
+            className="client__link"
+          >
+            <img
+              alt="Cypress Creek Renewables"
+              className="client__img"
+              src="images/ccr-logo.png"
+            />
+          </a>
+        </div>
+
+        <div className="client__wrap">
+          <a
+            href="https://www.bizagi.com/"
+            target="_blank"
+            className="client__link"
+          >
+            <img
+              alt="Bizagi"
+              className="client__img"
+              src="images/bizagi-logo.png"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );

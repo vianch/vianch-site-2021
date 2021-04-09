@@ -1,0 +1,91 @@
+@import "../../../theme/lib/colors";
+@import "../../../theme/lib/breakpoints";
+@import "../../../theme/lib/mixins";
+
+.footer__wrap {
+  width: 100%;
+  display: block;
+  margin: 8rem 0 0;
+  background-color: $mainFontColor;
+  padding: 0 0 2.5rem;
+}
+
+.footer__discord-wrap {
+  background: $whiteColor;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  color: $mainFontColor;
+
+  &:hover,
+  &:focus,
+  &:active &:visited {
+    color: $mainFontColor;
+  }
+}
+
+.footer__discord-image {
+  height: 3.2rem;
+  margin-right: 1rem;
+}
+
+.footer__discord-message {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+
+  @include respond-below(sm) {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}
+
+.footer__container,
+.footer__links-wrap {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.footer__container {
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  @include respond-below(xs) {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.footer__links-wrap {
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+
+  @include respond-below(sm) {
+    width: 70%;
+  }
+
+  @include respond-below(xs) {
+    justify-content: flex-start;
+    width: auto;
+    margin-top: 1rem;
+  }
+}
+
+.footer__social-link {
+  margin-right: 1.5rem;
+}
+
+.footer__social-icon {
+  @include opacity(0.6);
+  height: 2.8rem;
+
+  @include respond-below(sm) {
+    height: 1.8rem;
+  }
+}

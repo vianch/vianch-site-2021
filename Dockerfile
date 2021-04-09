@@ -13,7 +13,7 @@ RUN yarn global add gatsby-cli
 RUN yarn install
 
 # Copying source files
-# COPY gatsby-config.js /mayday-marketing-site
+# COPY gatsby-config.js /vianch-site
 COPY . /vianch-site
 
 # Building app
