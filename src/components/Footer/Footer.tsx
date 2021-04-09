@@ -7,6 +7,7 @@ const Footer = (): ReactElement => {
   return (
     <div className="footer__wrap">
       <a
+        id="contact"
         href="https://discord.gg/UVgXjgEXX4"
         target="_blank"
         className="footer__discord-wrap"

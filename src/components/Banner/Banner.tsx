@@ -5,7 +5,9 @@ import "./styles/banner.scss";
 const Banner = (): ReactElement => {
   return (
     <section className="container banner__container">
-      <h2 className="banner__title">VIANCH</h2>
+      <h2 id="about" className="banner__title">
+        VIANCH
+      </h2>
 
       <div className="banner__info">
         <div className="banner__avatar-container">

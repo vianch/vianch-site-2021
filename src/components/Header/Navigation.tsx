@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Navigation = (): ReactElement => {
   return (
@@ -6,24 +7,24 @@ const Navigation = (): ReactElement => {
       <nav id="navbar" className="header__nav collapse">
         <ul className="header__elenco">
           <li className="header__el">
-            <a href="#" className="header__link">
+            <AnchorLink className="header__link" href="#about">
               About
-            </a>
+            </AnchorLink>
           </li>
           <li className="header__el">
-            <a href="#" className="header__link">
+            <AnchorLink className="header__link" href="#git">
               Git
-            </a>
+            </AnchorLink>
           </li>
           <li className="header__el">
-            <a href="#" className="header__link">
+            <AnchorLink className="header__link" href="#clients">
               Clients
-            </a>
+            </AnchorLink>
           </li>
           <li className="header__el">
-            <a href="#" className="header__link">
-              Work
-            </a>
+            <AnchorLink className="header__link" href="#contact">
+              Contact
+            </AnchorLink>
           </li>
         </ul>
       </nav>

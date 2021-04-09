@@ -11,8 +11,16 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sass",
     },
+    `gatsby-plugin-react-helmet`,
   ],
   siteMetadata: {
-    title: "VIANCH",
+    title: "VIANCH.com",
+    titleTemplate: "%s · Vianch.com",
+    description:
+      "Full stack application Developer and photographer based in Bogotá Colombia. " +
+      "Developer at TodayTix Group in New York and Zaga Colombia.",
+    url: "www.vianch.com",
+    image: "/images/avatar.png",
+    twitterUsername: "@vianch_tog",
   },
 };
