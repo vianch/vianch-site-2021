@@ -22,6 +22,11 @@ const Navigation = (): ReactElement => {
             </AnchorLink>
           </li>
           <li className="header__el">
+            <AnchorLink className="header__link" href="#work">
+              Work
+            </AnchorLink>
+          </li>
+          <li className="header__el">
             <AnchorLink className="header__link" href="#contact">
               Contact
             </AnchorLink>

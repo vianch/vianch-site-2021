@@ -16,7 +16,9 @@ const Work = (): ReactElement => {
   return (
     <div className="container">
       <div className="work__header">
-        <h2 className="work__title">Work</h2>
+        <h2 id="work" className="work__title">
+          Work
+        </h2>
         <p className="work__subtitle">Visit some of the works.</p>
       </div>
 
