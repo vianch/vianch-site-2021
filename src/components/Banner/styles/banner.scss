@@ -51,6 +51,10 @@
     font-size: 1.5rem;
     line-height: 2.4rem;
   }
+
+  @include respond-below(xs) {
+    margin-top: 2rem;
+  }
 }
 
 .banner__link {
