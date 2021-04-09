@@ -1,0 +1,42 @@
+@import "../../../theme/lib/breakpoints";
+@import "../../../theme/lib/colors";
+
+.container.repositories__container {
+  margin-top: 3.4rem;
+}
+
+.repositories__title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 3.5rem;
+  font-size: 2.4rem;
+}
+
+.repositories__link {
+  color: $mainFontColor;
+
+  &:hover,
+  &:focus,
+  &:visited {
+    color: $mainFontColor;
+  }
+}
+
+.repositories__card {
+  height: 9.7rem;
+  margin-bottom: 3.5rem;
+}
+
+.repositories__technology {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.repositories__technology-image {
+  height: 1.2rem;
+  margin-right: 0.5rem;
+}
