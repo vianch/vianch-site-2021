@@ -19,7 +19,7 @@ const Work = (): ReactElement => {
         <h2 id="work" className="work__title">
           Work
         </h2>
-        <p className="work__subtitle">Visit some of the works.</p>
+        <p className="work__subtitle">Visit some of my latest works.</p>
       </div>
 
       <div className="work__wrap">
