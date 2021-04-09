@@ -6,6 +6,7 @@ import {
   Clients,
   Footer,
   MetaTags,
+  Work,
 } from "../components";
 
 import "../theme/main.scss";
@@ -18,6 +19,7 @@ const IndexRoute = (): ReactElement => {
       <Banner />
       <Repositories />
       <Clients />
+      <Work />
       <Footer />
     </>
   );

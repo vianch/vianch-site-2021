@@ -18,7 +18,7 @@ const Repositories = (): ReactElement => {
     <div className="container repositories__container">
       <h2 id="git" className="repositories__title">
         <img src="images/codercat.png" height="65" alt="GitHub" />
-        GitHub Repositories
+        GitHub Projects
       </h2>
 
       <div className="row">
