@@ -3,8 +3,9 @@ export const getRepositories = (): Repository[] => {
     {
       url: "https://github.com/vianch/vianch-site-2021",
       title: "vianch/vianch-site-2021",
-      description: "Vianch portfolio 2021",
-      technology: "TypeScript",
+      description:
+        "VIANCH portfolio: you are free to use it, improve it, PR, criticize or give me feedback.",
+      technology: "TypeScript / Gatsby / SCSS",
     },
     {
       url: "https://github.com/vianch/smooth-server",

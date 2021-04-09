@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import { Header, Banner, Repositories, Clients } from "../components";
+import { Header, Banner, Repositories, Clients, Footer } from "../components";
 
 import "../theme/main.scss";
 
@@ -10,6 +10,7 @@ const IndexRoute = (): ReactElement => {
       <Banner />
       <Repositories />
       <Clients />
+      <Footer />
     </>
   );
 };

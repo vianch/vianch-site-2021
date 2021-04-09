@@ -7,7 +7,7 @@ const Navigation = (): ReactElement => {
         <ul className="header__elenco">
           <li className="header__el">
             <a href="#" className="header__link">
-              Home
+              About
             </a>
           </li>
           <li className="header__el">
@@ -17,17 +17,12 @@ const Navigation = (): ReactElement => {
           </li>
           <li className="header__el">
             <a href="#" className="header__link">
+              Clients
+            </a>
+          </li>
+          <li className="header__el">
+            <a href="#" className="header__link">
               Work
-            </a>
-          </li>
-          <li className="header__el">
-            <a href="#" className="header__link">
-              About
-            </a>
-          </li>
-          <li className="header__el">
-            <a href="#" className="header__link">
-              Contact
             </a>
           </li>
         </ul>
