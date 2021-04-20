@@ -1,4 +1,5 @@
 # Development
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N74ADJR)
 
 ## Getting Started
 1. Install [Homebrew](http://brew.sh/).
@@ -162,7 +163,7 @@ PRs also require at least one approval from peers before they can be merged.
 - go to project folder
 - create docker image
 ```bash
-sudo docker build -t viach-site .
+sudo docker build -t vianch-site .
 ```
 
 1. stop any container, eg: `sudo docker container stop c672089577f8`
@@ -172,7 +173,7 @@ sudo docker container stop {containerId}
 
 3. start a new container
 ```bash
-sudo docker run -d -p 3000:8080 viach-site
+sudo docker run -d -p 3000:8080 vinach-site
 ```
 
 4. remove any un used containers and images
@@ -217,7 +218,6 @@ yarn run build
 ```bash
 yarn run start
 ```
-
 
 ### NGINX documentation
 - [Digital ocean algorithms](https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms)
