@@ -162,7 +162,7 @@ PRs also require at least one approval from peers before they can be merged.
 - go to project folder
 - create docker image
 ```bash
-sudo docker build -t victor-site .
+sudo docker build -t viach-site .
 ```
 
 1. stop any container, eg: `sudo docker container stop c672089577f8`
@@ -172,7 +172,7 @@ sudo docker container stop {containerId}
 
 3. start a new container
 ```bash
-sudo docker run -d -p 3000:8080 victor-site
+sudo docker run -d -p 3000:8080 viach-site
 ```
 
 4. remove any un used containers and images
@@ -185,6 +185,11 @@ sudo docker image prune -a
 - running locally 
 ```bash
 sudo docker-compose up
+```
+
+- running locally develop
+```bash
+docker-compose -f docker-compose-develop.yml up 
 ```
 
 - running detached mode: Run container in the background / Don't start linked services

@@ -3,9 +3,12 @@ services:
   web:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: .docker/production/Dockerfile
+    restart: always
     image: vianch-site-image
     container_name: 'vianch-site'
+    volumes:
+      - ./:/vianch-site
     ports:
       - "8080:8080"
     networks:
