@@ -16,7 +16,7 @@
     "clean": "gatsby clean && rm -rf package-lock.json && rm -rf yarn.lock && rm -rf yarn-error.log && rm -rf node_modules &&  rm -rf .next &&  rm -rf _static && yarn install"
   },
   "dependencies": {
-    "gatsby": "^3.2.1",
+    "gatsby": "^3.4.2",
     "gatsby-plugin-google-gtag": "^3.2.0",
     "gatsby-plugin-google-tagmanager": "^3.2.0",
     "react": "^17.0.2",
