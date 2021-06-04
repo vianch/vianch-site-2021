@@ -1,6 +1,6 @@
 {
   "name": "vianch-site-2021",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "vianch personal site",
   "main": "index.js",
   "repository": "git@github.com:vianch/vianch-site-2021.git",
@@ -8,12 +8,16 @@
   "license": "MIT",
   "scripts": {
     "build": "APP_ENV=production gatsby build",
+    "changelog": "conventional-changelog -p gatsby -i CHANGELOG.md -s && git add CHANGELOG.md",
     "dev": "APP_ENV=development gatsby develop  -H 0.0.0.0 -p 3000",
     "start": "APP_ENV=production gatsby serve -H 0.0.0.0 -p 8080",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "npm run lint -- --fix",
     "clean:gatsby": "gatsby clean",
-    "clean": "gatsby clean && rm -rf package-lock.json && rm -rf yarn.lock && rm -rf yarn-error.log && rm -rf node_modules &&  rm -rf .next &&  rm -rf _static && yarn install"
+    "clean": "gatsby clean && rm -rf package-lock.json && rm -rf yarn.lock && rm -rf yarn-error.log && rm -rf node_modules &&  rm -rf .next &&  rm -rf _static && yarn install",
+    "pub:patch": "npm --no-git-tag-version version patch",
+    "pub:minor": "npm --no-git-tag-version version minor",
+    "pub:major": "npm --no-git-tag-version version major"
   },
   "dependencies": {
     "gatsby": "^3.4.2",
@@ -25,6 +29,8 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@types/node": "^14.14.37",
     "@types/react": "^17.0.3",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
